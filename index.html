@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6e9dd">
+  <title>A little something for you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <input class="stage-control" type="radio" name="stage" id="step-one" checked aria-hidden="true">
+  <input class="stage-control" type="radio" name="stage" id="step-two" aria-hidden="true">
+  <input class="stage-control" type="radio" name="stage" id="step-three" aria-hidden="true">
+  <input class="stage-control" type="radio" name="stage" id="step-reveal" aria-hidden="true">
+  <input class="stage-control" type="radio" name="stage" id="step-happy" aria-hidden="true">
+
+  <main class="experience">
+    <div class="paper-grain" aria-hidden="true"></div>
+    <span class="corner-spark spark-one" aria-hidden="true">✳</span>
+    <span class="corner-spark spark-two" aria-hidden="true">✳</span>
+
+    <section class="screen intro" aria-labelledby="intro-title" aria-live="polite">
+      <div class="envelope" aria-hidden="true">
+        <div class="envelope-flap"></div>
+        <span class="envelope-heart">♥</span>
+      </div>
+      <h1 id="intro-title">I have something<br><em>to tell you.</em></h1>
+      <label class="reveal-button" for="step-two">Reveal what I want to say <span aria-hidden="true">↗</span></label>
+    </section>
+
+    <section class="screen question step-two" aria-labelledby="question-two-title" aria-live="polite">
+      <div class="question-art art-curious" aria-hidden="true"><span>?</span></div>
+      <h1 id="question-two-title">Do you <em>really</em><br>want to know?</h1>
+      <div class="actions">
+        <label class="reveal-button" for="step-three">Yes, tell me <span aria-hidden="true">↗</span></label>
+        <label class="back-button" for="step-one"><span aria-hidden="true">↶</span> Not yet</label>
+      </div>
+    </section>
+
+    <section class="screen question step-three" aria-labelledby="question-three-title" aria-live="polite">
+      <div class="question-art art-sure" aria-hidden="true"><span>♥</span></div>
+      <h1 id="question-three-title">Are you <em>sure?</em></h1>
+      <div class="actions">
+        <label class="reveal-button" for="step-reveal">I’m sure <span aria-hidden="true">↗</span></label>
+        <label class="back-button" for="step-two"><span aria-hidden="true">↶</span> Wait, go back</label>
+      </div>
+    </section>
+
+    <section class="screen question step-reveal" aria-labelledby="reveal-title" aria-live="polite">
+      <div class="question-art art-open" aria-hidden="true"><span>♥</span></div>
+      <h1 id="reveal-title"><em>Reveal</em></h1>
+      <label class="reveal-button" for="step-happy">Open your note <span aria-hidden="true">↗</span></label>
+    </section>
+
+    <section class="screen celebration" aria-labelledby="celebration-title" aria-live="polite">
+      <div class="bubble-burst" aria-hidden="true">
+        <span class="bubble bubble-one"></span>
+        <span class="bubble bubble-two"></span>
+        <span class="bubble bubble-three"></span>
+        <span class="bubble bubble-four"></span>
+        <span class="bubble bubble-five"></span>
+        <span class="bubble bubble-six"></span>
+        <span class="bubble bubble-seven"></span>
+        <span class="bubble bubble-eight"></span>
+      </div>
+      <div class="confetti confetti-a" aria-hidden="true">✦</div>
+      <div class="confetti confetti-b" aria-hidden="true">♥</div>
+      <div class="confetti confetti-c" aria-hidden="true">✳</div>
+      <div class="confetti confetti-d" aria-hidden="true">♥</div>
+      <div class="confetti confetti-e" aria-hidden="true">✦</div>
+
+      <div class="celebration-topline"><span>EST. 100 DAYS AGO</span><span class="topline-heart" aria-hidden="true">♥</span><span>AND COUNTING</span></div>
+      <div class="celebration-content">
+        <div class="day-seal" aria-label="100 days">
+          <span class="seal-small">ONE HUNDRED</span>
+          <span class="seal-number">100</span>
+          <span class="seal-small">DAYS OF US</span>
+        </div>
+        <p class="eyebrow celebration-eyebrow">my favorite little milestone</p>
+        <h1 id="celebration-title">Happy <em>100th</em><br>Day!</h1>
+        <p class="love-note">I love you <span aria-hidden="true">♥</span></p>
+        <div class="ornament" aria-hidden="true"><span></span> ♥ <span></span></div>
+        <p class="message">One hundred days of you, and somehow<br class="desktop-break"> every day still feels like the beginning.</p>
+        <p class="signoff">Here’s to all the little moments still to come.<br><em>I’m so glad it’s you.</em></p>
+      </div>
+      <label class="back-button" for="step-one"><span aria-hidden="true">↶</span> Read it again</label>
+      <div class="footer-mark">100 <span>♡</span> ALWAYS</div>
+    </section>
+  </main>
+</body>
+</html>
